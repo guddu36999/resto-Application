@@ -1,0 +1,25 @@
+<h2 class="text-center my-4">Restaurant List</h2>
+
+<div class="row">
+  <div *ngFor="let restaurent of data" class="col-md-6 col-lg-4 mb-4">
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <small class="text-muted d-block mb-2">Restaurant ID: {{restaurent.id}}</small>
+        <h5 class="card-title text-primary">{{restaurent.RestaurantName}}</h5>
+        <p class="card-text text-muted mb-1">Location: {{restaurent.RestaurantLocation}}</p>
+        <p class="card-text">
+          <strong>Total Seats Available:</strong> 
+          <span class="badge bg-info">{{restaurent.seat_available}}</span>
+        </p>
+        <p class="card-text">
+          <strong>Contact:</strong> 
+          <a href="tel:{{restaurent.Restaurant_contact}}" class="text-dark">{{restaurent.Restaurant_contact}}</a>
+        </p>
+        <p class="card-text">
+          <strong>Cuisines:</strong> 
+          <span *ngFor="let cuisine of restaurent.cuisines" class="badge bg-secondary me-1">{{cuisine}}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

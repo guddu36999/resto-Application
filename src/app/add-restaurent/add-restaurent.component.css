@@ -1,0 +1,27 @@
+.custom-form {
+    max-width: 500px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.custom-form .form-control {
+    border: 2px solid #ced4da;
+    transition: border-color 0.3s ease;
+}
+
+.custom-form .form-control:focus {
+    border-color: #495057;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+.custom-form .btn {
+    background-color: #007bff;
+    border-color: #007bff;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-form .btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}

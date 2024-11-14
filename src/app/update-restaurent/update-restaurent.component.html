@@ -1,0 +1,29 @@
+<form (ngSubmit)="collect(d1.value, d2.value, d3.value, d4.value, d5.value)" class="update-form">
+  <div class="form-group">
+    <label for="id">Restaurant ID:</label>
+    <input type="number" name="id" id="id" #d1 placeholder="Enter ID" required class="form-input">
+  </div>
+
+  <div class="form-group">
+    <label for="name">Restaurant Name:</label>
+    <input type="text" name="name" id="name" #d2 placeholder="Enter restaurant name" required class="form-input">
+  </div>
+
+  <div class="form-group">
+    <label for="location">Location:</label>
+    <input type="text" name="location" id="location" #d3 placeholder="Enter restaurant location" required class="form-input">
+  </div>
+
+  <div class="form-group">
+    <label for="seat">Seats Available:</label>
+    <input type="number" name="seat" id="seat" #d4 placeholder="Enter number of seats" required class="form-input">
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Contact Number:</label>
+    <input type="tel" name="phone" id="phone" #d5 placeholder="Enter contact number" required class="form-input">
+  </div>
+
+  <button type="submit" class="btn-submit">Submit</button>
+  
+</form>

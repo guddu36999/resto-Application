@@ -1,0 +1,18 @@
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Book a Seat</h2>
+    <form (ngSubmit)="collect(data.value, d1.value, d2.value, d3.value, d4.value)" class="text-center">
+        <div class="form-group">
+            <input type="number" name="id" id="restaurantId" #data class="form-control mb-3" placeholder="Enter the restaurant ID:" required>
+            
+            <input type="number" name="user_id" id="" #d1 class="form-control mb-3" placeholder="Enter your User ID:" required>
+            
+            <input type="text" name="name" id="" #d2 class="form-control mb-3" placeholder="Enter your Name:" required>
+            
+            <input type="email" name="user_email" #d3 id="" class="form-control mb-3" placeholder="Enter your Email:" required>
+            
+            <input type="tel" name="contact" #d4 id="" class="form-control mb-3" placeholder="Enter your Phone Number:" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-lg">Book Now!</button>
+    </form>
+</div>

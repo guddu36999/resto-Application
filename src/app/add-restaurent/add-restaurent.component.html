@@ -1,0 +1,39 @@
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Add New Restaurant</h2>
+  <form (ngSubmit)="collect(d2.value, d1.value, d3.value, d4.value, d5.value)" class="shadow p-4 rounded bg-light">
+    
+    <div class="form-group mb-3">
+      <label for="name" class="form-label">Restaurant Name</label>
+      <input type="text" class="form-control" id="name" #d1 placeholder="Enter restaurant name" required>
+    </div>
+
+    
+    <div class="form-group mb-3">
+      <label for="id" class="form-label">Restaurant ID</label>
+      <input type="number" class="form-control" id="id" #d2 placeholder="Enter restaurant ID" required>
+    </div>
+
+   
+    <div class="form-group mb-3">
+      <label for="location" class="form-label">Location</label>
+      <input type="text" class="form-control" id="location" #d3 placeholder="Enter location" required>
+    </div>
+
+    
+    <div class="form-group mb-3">
+      <label for="seats" class="form-label">Seats Available</label>
+      <input type="number" class="form-control" id="seats" #d4 placeholder="Enter available seats" required>
+    </div>
+
+    
+    <div class="form-group mb-3">
+      <label for="contact" class="form-label">Contact Number</label>
+      <input type="tel" class="form-control" id="contact" #d5 placeholder="Enter contact number" required>
+    </div>
+
+    
+    <div class="text-center">
+      <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+    </div>
+  </form>
+</div>
